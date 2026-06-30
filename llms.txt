@@ -1,0 +1,32 @@
+# BDExam Website
+https://bdexam.pages.dev
+
+## Description
+Free Bangladesh exam & education calculator website.
+
+## Features
+- GPA Calculator (SSC/HSC)
+- Age Calculator
+- Marks Calculator
+- Salary Calculator
+- Education tools for students
+
+## Target Users
+Bangladesh students (SSC, HSC, University)
+
+## Purpose
+To help students calculate results easily and improve education planning.
+
+## Pages
+- Home: https://bdexam.pages.dev/
+- Age Calculator: https://bdexam.pages.dev/age-calculator.html
+- GPA Calculator: https://bdexam.pages.dev/gpa-calculator.html
+- Marks Calculator: https://bdexam.pages.dev/marks-calculator.html
+- Salary Calculator: https://bdexam.pages.dev/salary-calculator.html
+- Contact: https://bdexam.pages.dev/contact.html
+
+## Language
+English + Bangla audience
+
+## Category
+Education, Tools, Calculators
