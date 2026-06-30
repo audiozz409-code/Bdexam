@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- Home -->
+<url>
+  <loc>https://bdexam.pages.dev/</loc>
+  <priority>1.0</priority>
+</url>
+
+<!-- Age Calculator -->
+<url>
+  <loc>https://bdexam.pages.dev/age-calculator.html</loc>
+  <priority>0.9</priority>
+</url>
+
+<!-- GPA Calculator -->
+<url>
+  <loc>https://bdexam.pages.dev/gpa-calculator.html</loc>
+  <priority>0.9</priority>
+</url>
+
+<!-- Marks Calculator -->
+<url>
+  <loc>https://bdexam.pages.dev/marks-calculator.html</loc>
+  <priority>0.9</priority>
+</url>
+
+<!-- Salary Calculator -->
+<url>
+  <loc>https://bdexam.pages.dev/salary-calculator.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Contact -->
+<url>
+  <loc>https://bdexam.pages.dev/contact.html</loc>
+  <priority>0.7</priority>
+</url>
+
+</urlset>
