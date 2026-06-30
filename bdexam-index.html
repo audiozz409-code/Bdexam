@@ -1,0 +1,1393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BDExam - Free Bangladesh exam calculators. SSC HSC GPA calculator, percentage to GPA, CGPA converter, marks calculator, government job salary scale 2026.">
+<meta name="keywords" content="ssc gpa calculator bangladesh, hsc gpa calculator, percentage to gpa bangladesh, cgpa calculator bangladesh, government job salary bangladesh 2026, exam marks calculator bd">
+<title>BDExam — Bangladesh Exam & Education Calculators 2026</title>
+
+<!-- ═══════════════════════════════════════
+     LAYER 1: MONETAG MULTITAG
+     Replace {MONETAG_PUBLISHER_ID} with real ID
+     In-Page Push + Vignette + Onclick — AUTO
+════════════════════════════════════════ -->
+<!-- MONETAG MULTITAG START -->
+<!-- <script src="//cdn.monetag.com/multitag.js?z={MONETAG_PUBLISHER_ID}" async></script> -->
+<!-- MONETAG MULTITAG END -->
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f0f2f8;
+  --surface: #ffffff;
+  --surface2: #f6f8fc;
+  --border: #e1e7f0;
+  --navy: #1a3a6b;
+  --navy-light: #2350a0;
+  --navy-pale: #eef2fc;
+  --red: #c0392b;
+  --red-pale: #fdf0ef;
+  --gold: #e6a817;
+  --gold-pale: #fff9e6;
+  --green: #1a7a4a;
+  --green-pale: #e8f6ee;
+  --text: #1a202c;
+  --text2: #4a5568;
+  --text3: #718096;
+  --shadow: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-md: 0 4px 14px rgba(0,0,0,.10);
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+/* ── HEADER ── */
+.site-header {
+  background: var(--navy);
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 10px rgba(10,30,80,.35);
+}
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo { font-size: 20px; font-weight: 800; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+.logo span { color: var(--gold); }
+.header-tagline { font-size: 11px; color: rgba(255,255,255,.55); }
+
+/* ── LEADERBOARD AD ── */
+.ad-leaderboard { background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 16px; text-align: center; display: none; }
+.ad-leaderboard .ad-label { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 4px; }
+@media (min-width: 768px) { .ad-leaderboard { display: block; } }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 26px 16px 22px;
+  text-align: center;
+  color: #fff;
+}
+.hero-flag { font-size: 26px; margin-bottom: 8px; display: block; }
+.hero h1 { font-size: 21px; font-weight: 800; margin-bottom: 5px; line-height: 1.3; }
+.hero p { font-size: 12.5px; opacity: .75; max-width: 460px; margin: 0 auto; }
+
+/* ── MAIN ── */
+.main-wrap { max-width: 960px; margin: 0 auto; padding: 14px 12px 40px; }
+
+/* ── TOOL GRID ── */
+.tool-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 9px; margin-bottom: 14px; }
+@media (min-width: 560px) { .tool-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 860px) { .tool-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.tool-btn {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 13px 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .16s;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.tool-btn:hover, .tool-btn.active { border-color: var(--navy); background: var(--navy-pale); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.tool-btn .tool-icon { font-size: 21px; }
+.tool-btn .tool-name { font-size: 11.5px; font-weight: 600; color: var(--text); line-height: 1.3; }
+
+/* ── CALC CARD ── */
+.calc-card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow-md); overflow: hidden; margin-bottom: 14px; }
+.calc-header { background: var(--navy); padding: 13px 18px; color: #fff; display: flex; align-items: center; gap: 10px; }
+.calc-header .calc-icon { font-size: 18px; }
+.calc-header h2 { font-size: 14.5px; font-weight: 700; }
+.calc-body { padding: 18px; }
+
+/* ── AD NATIVE WRAP ── */
+.ad-native-wrap { display: flex; gap: 14px; align-items: flex-start; }
+.ad-native-side { width: 160px; min-width: 160px; display: none; }
+@media (min-width: 700px) { .ad-native-side { display: block; } }
+.ad-box { background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px; text-align: center; }
+.ad-box .ad-label { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 6px; }
+.ad-main { flex: 1; min-width: 0; }
+
+/* ── FORM ── */
+.form-group { margin-bottom: 13px; }
+.form-group label { display: block; font-size: 11.5px; font-weight: 700; color: var(--text2); margin-bottom: 5px; text-transform: uppercase; letter-spacing: .5px; }
+.form-group input, .form-group select { width: 100%; padding: 10px 13px; border: 2px solid var(--border); border-radius: var(--radius-sm); font-size: 14px; font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); transition: border-color .14s; -webkit-appearance: none; }
+.form-group input:focus, .form-group select:focus { outline: none; border-color: var(--navy); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+
+/* ── SUBJECT INPUT GRID ── */
+.subjects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+@media (min-width: 500px) { .subjects-grid { grid-template-columns: repeat(3, 1fr); } }
+.subject-item label { font-size: 11px; font-weight: 600; color: var(--text2); display: block; margin-bottom: 4px; }
+.subject-item input { width: 100%; padding: 8px 10px; border: 2px solid var(--border); border-radius: 6px; font-size: 13px; font-family: 'Inter', sans-serif; }
+.subject-item input:focus { outline: none; border-color: var(--navy); }
+
+/* ── GRADE TABLE ── */
+.grade-ref { background: var(--navy-pale); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 14px; font-size: 12px; }
+.grade-ref h5 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--text3); margin-bottom: 8px; }
+.grade-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.grade-pill { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 3px 10px; font-size: 11px; font-weight: 600; }
+.grade-pill.a-plus { color: var(--green); border-color: var(--green); }
+.grade-pill.a { color: #1a6b3a; border-color: #1a6b3a; }
+.grade-pill.b { color: var(--navy); border-color: var(--navy); }
+.grade-pill.c { color: #7a5a00; border-color: #d4a820; }
+.grade-pill.d { color: var(--red); border-color: var(--red); }
+
+/* ── BUTTON ── */
+.btn-calc { width: 100%; padding: 12px; background: var(--navy); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 15px; font-weight: 700; font-family: 'Inter', sans-serif; cursor: pointer; transition: background .14s; margin-top: 4px; }
+.btn-calc:hover { background: var(--navy-light); }
+
+/* ── RESULTS ── */
+.result-box { display: none; margin-top: 16px; background: var(--navy-pale); border: 2px solid var(--navy); border-radius: var(--radius-sm); padding: 16px; }
+.result-box.show { display: block; }
+.result-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(26,58,107,.12); font-size: 13px; }
+.result-row:last-child { border-bottom: none; }
+.result-label { color: var(--text2); font-weight: 500; }
+.result-value { font-weight: 700; color: var(--navy); font-size: 14px; }
+.result-value.red { color: var(--red); }
+.result-value.green { color: var(--green); }
+.result-title { font-size: 11px; font-weight: 800; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+
+/* ── GPA BADGE ── */
+.gpa-badge { text-align: center; padding: 16px; background: var(--surface); border-radius: var(--radius-sm); margin-bottom: 12px; border: 2px solid var(--navy); }
+.gpa-number { font-size: 48px; font-weight: 800; color: var(--navy); line-height: 1; }
+.gpa-grade { font-size: 18px; font-weight: 700; color: var(--gold); margin-top: 4px; }
+.gpa-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
+/* ── ACTION BUTTONS ── */
+.action-btns { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.btn-action { flex: 1; min-width: 110px; padding: 9px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); font-size: 12px; font-weight: 600; font-family: 'Inter', sans-serif; cursor: pointer; color: var(--text2); text-align: center; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 5px; transition: all .14s; }
+.btn-action:hover { border-color: var(--navy); color: var(--navy); background: var(--navy-pale); }
+
+/* ── SOCIAL BAR ── */
+.ad-social-bar { background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; margin-top: 13px; display: flex; align-items: center; gap: 10px; }
+.ad-social-bar .ad-label { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+
+/* ── TOOL SECTIONS ── */
+.tool-section { display: none; }
+.tool-section.active { display: block; }
+
+/* ── INFO SECTION ── */
+.info-section { background: var(--surface); border-radius: var(--radius); padding: 18px; margin-top: 12px; box-shadow: var(--shadow); }
+.info-section h3 { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 9px; padding-bottom: 8px; border-bottom: 2px solid var(--navy-pale); }
+.info-section p, .info-section li { font-size: 13px; color: var(--text2); line-height: 1.7; margin-bottom: 5px; }
+.info-section ul { padding-left: 18px; }
+
+/* ── RELATED TOOLS ── */
+.related-tools { background: var(--gold-pale); border: 1px solid var(--gold); border-radius: var(--radius); padding: 14px 16px; margin-top: 12px; }
+.related-tools h4 { font-size: 11px; font-weight: 800; color: var(--text2); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 9px; }
+.related-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.related-link { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 5px 13px; font-size: 12px; font-weight: 600; color: var(--navy); cursor: pointer; transition: all .14s; text-decoration: none; }
+.related-link:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+/* ── SALARY TABLE ── */
+.salary-table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-top: 10px; }
+.salary-table th { background: var(--navy); color: #fff; padding: 8px 10px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; }
+.salary-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); }
+.salary-table tr:nth-child(even) td { background: var(--surface2); }
+.salary-table tr.highlight td { background: var(--navy-pale); font-weight: 700; color: var(--navy); }
+
+/* ── MOBILE STICKY ── */
+.ad-sticky-mobile { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 2px solid var(--navy); padding: 8px 16px; text-align: center; z-index: 40; box-shadow: 0 -4px 12px rgba(0,0,0,.1); }
+.ad-sticky-mobile .ad-label { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 4px; }
+@media (min-width: 768px) { .ad-sticky-mobile { display: none; } }
+
+/* ── FOOTER ── */
+.site-footer { background: var(--text); color: rgba(255,255,255,.5); text-align: center; padding: 22px 16px; font-size: 12px; line-height: 1.8; }
+.site-footer a { color: rgba(255,255,255,.65); text-decoration: none; }
+.footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 7px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/">BD<span>Exam</span></a>
+    <span class="header-tagline">Bangladesh Education & Career Calculators</span>
+  </div>
+</header>
+
+<!-- LAYER 6: CLICKADU LEADERBOARD -->
+<div class="ad-leaderboard">
+  <span class="ad-label">Advertisement</span>
+  <!-- CLICKADU 728x90 START -->
+  <!-- <script async src="//cdn.clickadu.com/banner.js?id={CLICKADU_ZONE_ID}"></script> -->
+  <!-- CLICKADU 728x90 END -->
+  <div style="width:728px;height:90px;background:#f0f4f8;border:1px dashed #cbd5e0;display:inline-flex;align-items:center;justify-content:center;color:#a0aec0;font-size:11px;border-radius:6px;">728×90 — Clickadu Leaderboard</div>
+</div>
+
+<div class="hero">
+  <span class="hero-flag">🎓</span>
+  <h1>Bangladesh Exam & Education Calculators</h1>
+  <p>SSC GPA, HSC GPA, CGPA, Percentage, Government Job Salary Scale & more — free tools for Bangladeshi students</p>
+</div>
+
+<div class="main-wrap">
+
+  <!-- Tool Grid -->
+  <div class="tool-grid">
+    <button class="tool-btn active" onclick="showTool('ssc')" id="btn-ssc">
+      <span class="tool-icon">📝</span>
+      <span class="tool-name">SSC GPA Calculator</span>
+    </button>
+    <button class="tool-btn" onclick="showTool('hsc')" id="btn-hsc">
+      <span class="tool-icon">🎓</span>
+      <span class="tool-name">HSC GPA Calculator</span>
+    </button>
+    <button class="tool-btn" onclick="showTool('cgpa')" id="btn-cgpa">
+      <span class="tool-icon">🏫</span>
+      <span class="tool-name">University CGPA</span>
+    </button>
+    <button class="tool-btn" onclick="showTool('percentage')" id="btn-percentage">
+      <span class="tool-icon">📊</span>
+      <span class="tool-name">Marks Percentage</span>
+    </button>
+    <button class="tool-btn" onclick="showTool('govtsal')" id="btn-govtsal">
+      <span class="tool-icon">🏛️</span>
+      <span class="tool-name">Govt Job Salary</span>
+    </button>
+    <button class="tool-btn" onclick="showTool('scholarship')" id="btn-scholarship">
+      <span class="tool-icon">🏆</span>
+      <span class="tool-name">Scholarship Check</span>
+    </button>
+    <button class="tool-btn" onclick="showTool('study')" id="btn-study">
+      <span class="tool-icon">📅</span>
+      <span class="tool-name">Study Planner</span>
+    </button>
+    <button class="tool-btn" onclick="showTool('gradeconv')" id="btn-gradeconv">
+      <span class="tool-icon">🔄</span>
+      <span class="tool-name">Grade Converter</span>
+    </button>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 1: SSC GPA
+  ════════════════════════ -->
+  <div class="tool-section active" id="tool-ssc">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">📝</span>
+        <h2>SSC GPA Calculator Bangladesh 2026</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <!-- ADSTERRA NATIVE 300x250 START -->
+              <!-- <script>your adsterra code</script> -->
+              <!-- ADSTERRA NATIVE 300x250 END -->
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+
+            <div class="grade-ref">
+              <h5>Bangladesh Grading System</h5>
+              <div class="grade-row">
+                <span class="grade-pill a-plus">A+ = 5.00 (80–100)</span>
+                <span class="grade-pill a">A = 4.00 (70–79)</span>
+                <span class="grade-pill b">A- = 3.50 (60–69)</span>
+                <span class="grade-pill c">B = 3.00 (50–59)</span>
+                <span class="grade-pill c">C = 2.00 (40–49)</span>
+                <span class="grade-pill d">D = 1.00 (33–39)</span>
+              </div>
+            </div>
+
+            <p style="font-size:12px;color:var(--text2);margin-bottom:12px;">Enter marks or select grade for each subject. Bangla and English are compulsory.</p>
+
+            <div class="subjects-grid">
+              <div class="subject-item">
+                <label>Bangla (1st)</label>
+                <input type="number" class="ssc-mark" id="ssc-1" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>Bangla (2nd)</label>
+                <input type="number" class="ssc-mark" id="ssc-2" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>English (1st)</label>
+                <input type="number" class="ssc-mark" id="ssc-3" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>English (2nd)</label>
+                <input type="number" class="ssc-mark" id="ssc-4" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>Mathematics</label>
+                <input type="number" class="ssc-mark" id="ssc-5" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>Science / General Sci</label>
+                <input type="number" class="ssc-mark" id="ssc-6" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>Social Science</label>
+                <input type="number" class="ssc-mark" id="ssc-7" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>Religion</label>
+                <input type="number" class="ssc-mark" id="ssc-8" placeholder="Marks" min="0" max="100">
+              </div>
+              <div class="subject-item">
+                <label>4th Subject (Optional)</label>
+                <input type="number" class="ssc-mark" id="ssc-9" placeholder="Marks" min="0" max="100">
+              </div>
+            </div>
+
+            <button class="btn-calc" onclick="calcSSCGPA()">Calculate SSC GPA</button>
+
+            <div class="result-box" id="ssc-result">
+              <div class="gpa-badge">
+                <div class="gpa-number" id="r-ssc-gpa">—</div>
+                <div class="gpa-grade" id="r-ssc-grade">—</div>
+                <div class="gpa-label">SSC GPA (out of 5.00)</div>
+              </div>
+              <div class="result-title">Subject-wise Grade</div>
+              <div id="ssc-subject-results"></div>
+
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Result</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share Result</a>
+                <button class="btn-action" onclick="showTool('hsc')">HSC Calculator →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADSTERRA SOCIAL BAR -->
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <!-- ADSTERRA SOCIAL BAR START -->
+          <!-- Paste Adsterra Social Bar code here -->
+          <!-- ADSTERRA SOCIAL BAR END -->
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h3>How SSC GPA is Calculated in Bangladesh</h3>
+      <p>The Secondary School Certificate (SSC) examination is conducted by the Bangladesh Education Board. GPA is calculated on a 5.00 scale using the grading system implemented by the Ministry of Education.</p>
+      <ul>
+        <li>A+ (Excellent): 80–100 marks → Grade Point 5.00</li>
+        <li>A (Very Good): 70–79 marks → Grade Point 4.00</li>
+        <li>A- (Good): 60–69 marks → Grade Point 3.50</li>
+        <li>B (Satisfactory): 50–59 marks → Grade Point 3.00</li>
+        <li>C (Acceptable): 40–49 marks → Grade Point 2.00</li>
+        <li>D (Pass): 33–39 marks → Grade Point 1.00</li>
+        <li>F (Fail): Below 33 marks → Grade Point 0.00</li>
+        <li>Optional 4th subject: Only included if it improves your GPA</li>
+      </ul>
+    </div>
+
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('hsc')">HSC GPA Calculator</span>
+        <span class="related-link" onclick="showTool('percentage')">Marks Percentage</span>
+        <span class="related-link" onclick="showTool('cgpa')">University CGPA</span>
+        <span class="related-link" onclick="showTool('scholarship')">Scholarship Check</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 2: HSC GPA
+  ════════════════════════ -->
+  <div class="tool-section" id="tool-hsc">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">🎓</span>
+        <h2>HSC GPA Calculator Bangladesh 2026</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+            <div class="form-group">
+              <label>Science / Humanities / Commerce Group</label>
+              <select id="hsc-group" onchange="updateHSCSubjects()">
+                <option value="science">Science Group</option>
+                <option value="humanities">Humanities Group</option>
+                <option value="commerce">Commerce Group</option>
+              </select>
+            </div>
+
+            <div class="grade-ref">
+              <h5>Same Grading System as SSC</h5>
+              <div class="grade-row">
+                <span class="grade-pill a-plus">A+ = 5.00</span>
+                <span class="grade-pill a">A = 4.00</span>
+                <span class="grade-pill b">A- = 3.50</span>
+                <span class="grade-pill c">B = 3.00</span>
+                <span class="grade-pill c">C = 2.00</span>
+                <span class="grade-pill d">D = 1.00</span>
+              </div>
+            </div>
+
+            <div class="subjects-grid" id="hsc-subjects-grid">
+              <div class="subject-item"><label>Bangla (1st)</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>Bangla (2nd)</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>English (1st)</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>English (2nd)</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>ICT</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>Physics / Economics</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>Chemistry / Civics</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>Math / History</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+              <div class="subject-item"><label>Biology / Optional</label><input type="number" class="hsc-mark" placeholder="Marks" min="0" max="100"></div>
+            </div>
+
+            <button class="btn-calc" onclick="calcHSCGPA()">Calculate HSC GPA</button>
+
+            <div class="result-box" id="hsc-result">
+              <div class="gpa-badge">
+                <div class="gpa-number" id="r-hsc-gpa">—</div>
+                <div class="gpa-grade" id="r-hsc-grade">—</div>
+                <div class="gpa-label">HSC GPA (out of 5.00)</div>
+              </div>
+              <div class="result-title">Result Summary</div>
+              <div class="result-row"><span class="result-label">Subjects Entered</span><span class="result-value" id="r-hsc-subjects">—</span></div>
+              <div class="result-row"><span class="result-label">Total Grade Points</span><span class="result-value" id="r-hsc-total">—</span></div>
+              <div class="result-row"><span class="result-label">Failed Subjects</span><span class="result-value red" id="r-hsc-fail">—</span></div>
+
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Result</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share</a>
+                <button class="btn-action" onclick="showTool('cgpa')">CGPA Calculator →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('ssc')">SSC GPA</span>
+        <span class="related-link" onclick="showTool('cgpa')">University CGPA</span>
+        <span class="related-link" onclick="showTool('scholarship')">Scholarship Check</span>
+        <span class="related-link" onclick="showTool('govtsal')">Govt Job Salary</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 3: CGPA
+  ════════════════════════ -->
+  <div class="tool-section" id="tool-cgpa">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">🏫</span>
+        <h2>University CGPA Calculator Bangladesh</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Scale</label>
+                <select id="cgpa-scale">
+                  <option value="4">4.00 Scale (Most BD Universities)</option>
+                  <option value="5">5.00 Scale (Some Universities)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Number of Courses</label>
+                <select id="cgpa-count" onchange="renderCGPACourses()">
+                  <option value="4">4 Courses</option>
+                  <option value="5">5 Courses</option>
+                  <option value="6" selected>6 Courses</option>
+                  <option value="8">8 Courses</option>
+                  <option value="10">10 Courses</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="cgpa-courses"></div>
+            <button class="btn-calc" onclick="calcCGPA()" style="margin-top:6px;">Calculate CGPA</button>
+
+            <div class="result-box" id="cgpa-result">
+              <div class="gpa-badge">
+                <div class="gpa-number" id="r-cgpa-value">—</div>
+                <div class="gpa-grade" id="r-cgpa-class">—</div>
+                <div class="gpa-label" id="r-cgpa-label">CGPA</div>
+              </div>
+              <div class="result-row"><span class="result-label">Total Credit Hours</span><span class="result-value" id="r-cgpa-credits">—</span></div>
+              <div class="result-row"><span class="result-label">Total Grade Points</span><span class="result-value" id="r-cgpa-points">—</span></div>
+              <div class="result-row"><span class="result-label">Degree Classification</span><span class="result-value green" id="r-cgpa-degree">—</span></div>
+
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Result</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share</a>
+                <button class="btn-action" onclick="showTool('gradeconv')">Grade Converter →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+    <div class="info-section">
+      <h3>University CGPA Scale in Bangladesh</h3>
+      <p>Most public and private universities in Bangladesh use a 4.00 CGPA scale. Dhaka University, BUET, and other top institutions follow this system.</p>
+      <ul>
+        <li>A+ / A = 4.00 (80–100%)</li>
+        <li>A- = 3.70 (75–79%)</li>
+        <li>B+ = 3.30 (70–74%)</li>
+        <li>B = 3.00 (65–69%)</li>
+        <li>B- = 2.70 (60–64%)</li>
+        <li>C+ = 2.30 (55–59%)</li>
+        <li>C = 2.00 (50–54%)</li>
+        <li>D = 1.00 (45–49%)</li>
+        <li>CGPA 3.50+ is typically required for government job merit consideration</li>
+      </ul>
+    </div>
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('hsc')">HSC GPA</span>
+        <span class="related-link" onclick="showTool('gradeconv')">Grade Converter</span>
+        <span class="related-link" onclick="showTool('govtsal')">Govt Job Salary</span>
+        <span class="related-link" onclick="showTool('scholarship')">Scholarship Check</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 4: PERCENTAGE
+  ════════════════════════ -->
+  <div class="tool-section" id="tool-percentage">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">📊</span>
+        <h2>Exam Marks Percentage Calculator</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Marks Obtained</label>
+                <input type="number" id="pct-obtained" placeholder="e.g. 450" min="0">
+              </div>
+              <div class="form-group">
+                <label>Total Marks</label>
+                <input type="number" id="pct-total" placeholder="e.g. 500" min="0">
+              </div>
+            </div>
+            <button class="btn-calc" onclick="calcPercentage()">Calculate Percentage</button>
+
+            <div class="result-box" id="pct-result">
+              <div class="gpa-badge">
+                <div class="gpa-number" id="r-pct-value">—</div>
+                <div class="gpa-grade" id="r-pct-grade">—</div>
+                <div class="gpa-label">Percentage Score</div>
+              </div>
+              <div class="result-row"><span class="result-label">Marks Obtained</span><span class="result-value" id="r-pct-obtained">—</span></div>
+              <div class="result-row"><span class="result-label">Total Marks</span><span class="result-value" id="r-pct-total">—</span></div>
+              <div class="result-row"><span class="result-label">Marks Missed</span><span class="result-value red" id="r-pct-missed">—</span></div>
+              <div class="result-row"><span class="result-label">Equivalent BD Grade</span><span class="result-value green" id="r-pct-bdgrade">—</span></div>
+
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Result</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share</a>
+                <button class="btn-action" onclick="showTool('ssc')">GPA Calculator →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('ssc')">SSC GPA Calculator</span>
+        <span class="related-link" onclick="showTool('hsc')">HSC GPA Calculator</span>
+        <span class="related-link" onclick="showTool('gradeconv')">Grade Converter</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 5: GOVT JOB SALARY
+  ════════════════════════ -->
+  <div class="tool-section" id="tool-govtsal">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">🏛️</span>
+        <h2>Bangladesh Government Job Salary Scale 2026</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+            <div class="form-group">
+              <label>Select Pay Grade (National Pay Scale 2015)</label>
+              <select id="govt-grade" onchange="showGovtSalary()">
+                <option value="">-- Select your grade --</option>
+                <option value="1">Grade 1 — Secretary / Additional Secretary</option>
+                <option value="2">Grade 2 — Joint Secretary</option>
+                <option value="3">Grade 3 — Deputy Secretary</option>
+                <option value="4">Grade 4 — Senior Assistant Secretary</option>
+                <option value="5">Grade 5 — Assistant Secretary / Senior Officer</option>
+                <option value="6">Grade 6 — Senior Scale Officer</option>
+                <option value="7">Grade 7 — Scale Officer</option>
+                <option value="8">Grade 8 — Sub-Inspector / Asst. Superintendent</option>
+                <option value="9">Grade 9 — Inspector / Senior Officer</option>
+                <option value="10">Grade 10 — Senior Clerk / Head Clerk</option>
+                <option value="11">Grade 11 — Upper Division Clerk</option>
+                <option value="12">Grade 12 — Lower Division Clerk</option>
+                <option value="13">Grade 13 — Office Sohayak / Daptari</option>
+                <option value="14">Grade 14 — MLSS / Peon</option>
+                <option value="15">Grade 15 — Night Guard / Sweeper</option>
+                <option value="16">Grade 16 — Grade 16</option>
+                <option value="17">Grade 17 — Grade 17</option>
+                <option value="18">Grade 18 — Grade 18</option>
+                <option value="19">Grade 19 — Grade 19</option>
+                <option value="20">Grade 20 — Grade 20</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Years of Service</label>
+              <input type="number" id="govt-years" placeholder="e.g. 5" min="0" max="35" onchange="showGovtSalary()">
+            </div>
+
+            <button class="btn-calc" onclick="showGovtSalary()">Show Salary Breakdown</button>
+
+            <div class="result-box" id="govtsal-result">
+              <div class="result-title">Salary Breakdown (Approximate)</div>
+              <div class="result-row"><span class="result-label">Pay Grade</span><span class="result-value" id="r-govt-grade">—</span></div>
+              <div class="result-row"><span class="result-label">Basic Salary</span><span class="result-value" id="r-govt-basic">—</span></div>
+              <div class="result-row"><span class="result-label">House Rent (45% of Basic)</span><span class="result-value" id="r-govt-hra">—</span></div>
+              <div class="result-row"><span class="result-label">Medical Allowance</span><span class="result-value" id="r-govt-medical">—</span></div>
+              <div class="result-row"><span class="result-label">Tiffin / Conveyance</span><span class="result-value" id="r-govt-tiffin">—</span></div>
+              <div class="result-row"><span class="result-label">Increment (per year)</span><span class="result-value green" id="r-govt-increment">—</span></div>
+              <div class="result-row"><span class="result-label">💰 Gross Salary</span><span class="result-value" id="r-govt-gross" style="font-size:16px;">—</span></div>
+              <div class="result-row"><span class="result-label">Annual Festival Bonus (×2)</span><span class="result-value" id="r-govt-bonus">—</span></div>
+
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Result</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share</a>
+                <button class="btn-action" onclick="showTool('scholarship')">Scholarship Check →</button>
+              </div>
+            </div>
+
+            <!-- National Pay Scale Reference Table -->
+            <div style="margin-top:16px;">
+              <p style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">National Pay Scale 2015 — Quick Reference</p>
+              <table class="salary-table">
+                <thead>
+                  <tr><th>Grade</th><th>Basic (BDT/month)</th><th>Increment/Year</th><th>Typical Post</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>78,000</td><td>3,900</td><td>Secretary</td></tr>
+                  <tr class="highlight"><td>5</td><td>22,000</td><td>1,100</td><td>Asst. Secretary / 1st Class Officer</td></tr>
+                  <tr><td>9</td><td>11,000</td><td>550</td><td>Inspector / 2nd Class Officer</td></tr>
+                  <tr class="highlight"><td>13</td><td>8,250</td><td>413</td><td>Office Assistant / 3rd Class</td></tr>
+                  <tr><td>20</td><td>8,250</td><td>200</td><td>Grade 20 / Lowest Class</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('scholarship')">Scholarship Eligibility</span>
+        <span class="related-link" onclick="showTool('cgpa')">CGPA Calculator</span>
+        <span class="related-link" onclick="showTool('hsc')">HSC GPA</span>
+        <span class="related-link" onclick="showTool('ssc')">SSC GPA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 6: SCHOLARSHIP CHECK
+  ════════════════════════ -->
+  <div class="tool-section" id="tool-scholarship">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">🏆</span>
+        <h2>Bangladesh Scholarship Eligibility Checker</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+            <div class="form-group">
+              <label>Education Level</label>
+              <select id="sch-level">
+                <option value="ssc">Post-SSC (After Class 10)</option>
+                <option value="hsc">Post-HSC (After Class 12)</option>
+                <option value="university">University Level</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your GPA / CGPA</label>
+                <input type="number" id="sch-gpa" placeholder="e.g. 4.50" min="0" max="5" step="0.01">
+              </div>
+              <div class="form-group">
+                <label>Family Monthly Income (BDT)</label>
+                <input type="number" id="sch-income" placeholder="e.g. 25000" min="0">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Division</label>
+              <select id="sch-division">
+                <option value="rural">Rural Area</option>
+                <option value="urban">Urban Area</option>
+              </select>
+            </div>
+            <button class="btn-calc" onclick="checkScholarship()">Check Scholarship Eligibility</button>
+
+            <div class="result-box" id="sch-result">
+              <div class="result-title">Scholarship Eligibility Results</div>
+              <div id="sch-list"></div>
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Result</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share</a>
+                <button class="btn-action" onclick="showTool('govtsal')">Govt Job Salary →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('ssc')">SSC GPA</span>
+        <span class="related-link" onclick="showTool('hsc')">HSC GPA</span>
+        <span class="related-link" onclick="showTool('cgpa')">University CGPA</span>
+        <span class="related-link" onclick="showTool('govtsal')">Govt Salary</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 7: STUDY PLANNER
+  ════════════════════════ -->
+  <div class="tool-section" id="tool-study">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">📅</span>
+        <h2>Exam Study Time Planner</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+            <div class="form-group">
+              <label>Exam Date</label>
+              <input type="date" id="study-exam-date">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Number of Subjects</label>
+                <input type="number" id="study-subjects" placeholder="e.g. 8" min="1" max="20">
+              </div>
+              <div class="form-group">
+                <label>Available Hours Per Day</label>
+                <input type="number" id="study-hours" placeholder="e.g. 6" min="1" max="16">
+              </div>
+            </div>
+            <button class="btn-calc" onclick="calcStudyPlan()">Generate Study Plan</button>
+
+            <div class="result-box" id="study-result">
+              <div class="result-title">Your Study Plan</div>
+              <div class="result-row"><span class="result-label">Days Until Exam</span><span class="result-value" id="r-study-days" style="font-size:22px;">—</span></div>
+              <div class="result-row"><span class="result-label">Total Study Hours Available</span><span class="result-value" id="r-study-total">—</span></div>
+              <div class="result-row"><span class="result-label">Hours Per Subject</span><span class="result-value" id="r-study-per-subject">—</span></div>
+              <div class="result-row"><span class="result-label">Revision Days Needed</span><span class="result-value" id="r-study-revision">—</span></div>
+              <div class="result-row"><span class="result-label">Recommended Daily Schedule</span><span class="result-value" id="r-study-daily">—</span></div>
+
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Plan</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share Plan</a>
+                <button class="btn-action" onclick="showTool('ssc')">GPA Calculator →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('ssc')">SSC GPA</span>
+        <span class="related-link" onclick="showTool('hsc')">HSC GPA</span>
+        <span class="related-link" onclick="showTool('percentage')">Marks Percentage</span>
+        <span class="related-link" onclick="showTool('scholarship')">Scholarship</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════
+       TOOL 8: GRADE CONVERTER
+  ════════════════════════ -->
+  <div class="tool-section" id="tool-gradeconv">
+    <div class="calc-card">
+      <div class="calc-header">
+        <span class="calc-icon">🔄</span>
+        <h2>Grade Point Converter — BD / US / UK / 4.0 Scale</h2>
+      </div>
+      <div class="calc-body">
+        <div class="ad-native-wrap">
+          <div class="ad-native-side">
+            <div class="ad-box">
+              <span class="ad-label">Advertisement</span>
+              <div style="width:160px;height:200px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:6px;">Adsterra 300×250</div>
+            </div>
+          </div>
+          <div class="ad-main">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your GPA</label>
+                <input type="number" id="gconv-value" placeholder="e.g. 4.50" min="0" max="5" step="0.01">
+              </div>
+              <div class="form-group">
+                <label>From Scale</label>
+                <select id="gconv-from">
+                  <option value="bd5">Bangladesh 5.00 Scale</option>
+                  <option value="us4">US 4.00 Scale</option>
+                  <option value="pct">Percentage (%)</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn-calc" onclick="calcGradeConv()">Convert Grade</button>
+
+            <div class="result-box" id="gconv-result">
+              <div class="result-title">Grade Conversions</div>
+              <div class="result-row"><span class="result-label">Bangladesh 5.00 Scale</span><span class="result-value" id="r-gc-bd5">—</span></div>
+              <div class="result-row"><span class="result-label">US 4.00 Scale (GPA)</span><span class="result-value" id="r-gc-us4">—</span></div>
+              <div class="result-row"><span class="result-label">Percentage Equivalent</span><span class="result-value" id="r-gc-pct">—</span></div>
+              <div class="result-row"><span class="result-label">UK Class</span><span class="result-value" id="r-gc-uk">—</span></div>
+              <div class="result-row"><span class="result-label">Letter Grade</span><span class="result-value green" id="r-gc-letter">—</span></div>
+
+              <div class="action-btns">
+                <a class="btn-action" href="#" onclick="return handleDirectLink('adsterra')" target="_blank" rel="noopener">📥 Save Result</a>
+                <a class="btn-action" href="#" onclick="return handleDirectLink('mobidea')" target="_blank" rel="noopener">📤 Share</a>
+                <button class="btn-action" onclick="showTool('cgpa')">CGPA Calculator →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ad-social-bar">
+          <span class="ad-label">Sponsored</span>
+          <div style="width:100%;height:36px;background:#f0f4f8;border:1px dashed #cbd5e0;display:flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;">Adsterra Social Bar</div>
+        </div>
+      </div>
+    </div>
+    <div class="related-tools">
+      <h4>🔗 Related Calculators</h4>
+      <div class="related-list">
+        <span class="related-link" onclick="showTool('cgpa')">University CGPA</span>
+        <span class="related-link" onclick="showTool('hsc')">HSC GPA</span>
+        <span class="related-link" onclick="showTool('ssc')">SSC GPA</span>
+        <span class="related-link" onclick="showTool('percentage')">Marks Percentage</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end main-wrap -->
+
+<!-- MOBILE STICKY -->
+<div class="ad-sticky-mobile">
+  <span class="ad-label">Advertisement</span>
+  <!-- PROPELLERADS / CLICKADU MOBILE STICKY -->
+  <div style="width:320px;height:50px;background:#f0f4f8;border:1px dashed #cbd5e0;display:inline-flex;align-items:center;justify-content:center;color:#a0aec0;font-size:10px;border-radius:4px;margin:0 auto;">320×50 Mobile Banner</div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div>© 2026 BDExam — Bangladesh Exam & Education Calculators</div>
+  <div style="margin-top:4px;font-size:11px;">SSC GPA · HSC GPA · CGPA · Percentage · Govt Salary · Scholarship</div>
+</footer>
+
+<!-- LAYER 2: ADSTERRA POPUNDER -->
+<!-- ADSTERRA POPUNDER START -->
+<!-- <script async src="//cdn.adsterra.com/js/pop-ad.js?z={ADSTERRA_ZONE_ID}"></script> -->
+<!-- ADSTERRA POPUNDER END -->
+
+<!-- LAYER 4: PROPELLERADS -->
+<!-- PROPELLERADS INTERSTITIAL START -->
+<!-- <script async src="//cdn.propellerads.com/interstitial.js?id={PROPELLERADS_ZONE_ID}"></script> -->
+<!-- PROPELLERADS INTERSTITIAL END -->
+<!-- PROPELLERADS PUSH SUB START -->
+<!-- <script async src="//cdn.propellerads.com/pushsub.js?id={PROPELLERADS_PUSH_ID}"></script> -->
+<!-- PROPELLERADS PUSH SUB END -->
+
+<script>
+/* ── NAVIGATION ── */
+function showTool(name) {
+  document.querySelectorAll('.tool-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
+  const section = document.getElementById('tool-' + name);
+  const btn = document.getElementById('btn-' + name);
+  if (section) section.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ── DIRECT LINKS ── */
+function handleDirectLink(network) {
+  const links = {
+    adsterra: 'https://www.adsterra.com/direct-link/?YOUR_ADSTERRA_DIRECT_LINK_HERE',
+    mobidea:  'https://ml.mobidea.com/r/smartlink/?YOUR_MOBIDEA_SMARTLINK_HERE'
+  };
+  if (links[network].includes('YOUR_')) return false;
+  window.open(links[network], '_blank', 'noopener');
+  return false;
+}
+
+/* ── FORMAT ── */
+function fmt(n) { return '৳ ' + Math.round(n).toLocaleString('en-BD'); }
+
+/* ── GRADING HELPERS ── */
+function marksToGP(marks) {
+  if (marks >= 80) return { gp: 5.00, grade: 'A+' };
+  if (marks >= 70) return { gp: 4.00, grade: 'A' };
+  if (marks >= 60) return { gp: 3.50, grade: 'A-' };
+  if (marks >= 50) return { gp: 3.00, grade: 'B' };
+  if (marks >= 40) return { gp: 2.00, grade: 'C' };
+  if (marks >= 33) return { gp: 1.00, grade: 'D' };
+  return { gp: 0.00, grade: 'F' };
+}
+
+function gpToLabel(gp) {
+  if (gp >= 5.00) return 'A+ — Excellent ⭐';
+  if (gp >= 4.00) return 'A — Very Good';
+  if (gp >= 3.50) return 'A- — Good';
+  if (gp >= 3.00) return 'B — Satisfactory';
+  if (gp >= 2.00) return 'C — Acceptable';
+  if (gp >= 1.00) return 'D — Pass';
+  return 'F — Fail ❌';
+}
+
+/* ══════════════
+   TOOL 1: SSC GPA
+══════════════ */
+function calcSSCGPA() {
+  const inputs = document.querySelectorAll('.ssc-mark');
+  let totalGP = 0, count = 0, failed = false;
+  let subjectHTML = '';
+
+  inputs.forEach((input, i) => {
+    const val = parseFloat(input.value);
+    if (!val && val !== 0) return;
+    const { gp, grade } = marksToGP(val);
+    if (grade === 'F') failed = true;
+    totalGP += gp;
+    count++;
+    const labels = ['Bangla 1st','Bangla 2nd','English 1st','English 2nd','Mathematics','Science','Social Science','Religion','4th Subject'];
+    subjectHTML += `<div class="result-row"><span class="result-label">${labels[i]}</span><span class="result-value" style="color:${grade==='F'?'var(--red)':grade==='A+'?'var(--green)':'var(--navy)'}">${grade} (${val})</span></div>`;
+  });
+
+  if (count === 0) { alert('Please enter marks for at least one subject.'); return; }
+
+  const gpa = failed ? 0 : Math.min(5.00, (totalGP / count));
+  document.getElementById('r-ssc-gpa').textContent = failed ? 'FAIL' : gpa.toFixed(2);
+  document.getElementById('r-ssc-grade').textContent = failed ? 'Not Passed ❌' : gpToLabel(gpa);
+  document.getElementById('ssc-subject-results').innerHTML = subjectHTML;
+  document.getElementById('ssc-result').classList.add('show');
+}
+
+/* ══════════════
+   TOOL 2: HSC GPA
+══════════════ */
+function calcHSCGPA() {
+  const inputs = document.querySelectorAll('.hsc-mark');
+  let totalGP = 0, count = 0, failed = 0;
+
+  inputs.forEach(input => {
+    const val = parseFloat(input.value);
+    if (!val && val !== 0) return;
+    const { gp, grade } = marksToGP(val);
+    if (grade === 'F') failed++;
+    totalGP += gp;
+    count++;
+  });
+
+  if (count === 0) { alert('Please enter marks for at least one subject.'); return; }
+
+  const gpa = failed > 0 ? 0 : Math.min(5.00, totalGP / count);
+  document.getElementById('r-hsc-gpa').textContent = failed > 0 ? 'FAIL' : gpa.toFixed(2);
+  document.getElementById('r-hsc-grade').textContent = failed > 0 ? 'Not Passed ❌' : gpToLabel(gpa);
+  document.getElementById('r-hsc-subjects').textContent = count;
+  document.getElementById('r-hsc-total').textContent = totalGP.toFixed(2);
+  document.getElementById('r-hsc-fail').textContent = failed > 0 ? failed + ' subject(s) failed' : 'None ✅';
+  document.getElementById('r-hsc-fail').className = 'result-value ' + (failed > 0 ? 'red' : 'green');
+  document.getElementById('hsc-result').classList.add('show');
+}
+
+/* ══════════════
+   TOOL 3: CGPA
+══════════════ */
+function renderCGPACourses() {
+  const count = parseInt(document.getElementById('cgpa-count').value);
+  let html = '<div class="subjects-grid">';
+  for (let i = 1; i <= count; i++) {
+    html += `<div class="subject-item">
+      <label>Course ${i} Credits</label>
+      <input type="number" class="cgpa-credits" placeholder="e.g. 3" min="1" max="6">
+    </div>
+    <div class="subject-item">
+      <label>Course ${i} Grade</label>
+      <select class="cgpa-grades">
+        <option value="4.0">A+ / A (4.0)</option>
+        <option value="3.7">A- (3.7)</option>
+        <option value="3.3">B+ (3.3)</option>
+        <option value="3.0">B (3.0)</option>
+        <option value="2.7">B- (2.7)</option>
+        <option value="2.3">C+ (2.3)</option>
+        <option value="2.0">C (2.0)</option>
+        <option value="1.0">D (1.0)</option>
+        <option value="0">F (0.0)</option>
+      </select>
+    </div>`;
+    if (i % 3 === 0 && i < count) html += '</div><div class="subjects-grid">';
+  }
+  html += '</div>';
+  document.getElementById('cgpa-courses').innerHTML = html;
+}
+
+function calcCGPA() {
+  const credits = document.querySelectorAll('.cgpa-credits');
+  const grades  = document.querySelectorAll('.cgpa-grades');
+  const scale   = parseFloat(document.getElementById('cgpa-scale').value);
+  let totalPoints = 0, totalCredits = 0;
+
+  credits.forEach((c, i) => {
+    const cr = parseFloat(c.value) || 0;
+    const gp = parseFloat(grades[i].value) || 0;
+    if (cr > 0) { totalPoints += cr * gp; totalCredits += cr; }
+  });
+
+  if (totalCredits === 0) { alert('Please enter credit hours for at least one course.'); return; }
+
+  const cgpa = totalPoints / totalCredits;
+  let degClass = '', label = '';
+
+  if (scale === 4) {
+    if (cgpa >= 3.70) { degClass = 'First Class with Distinction'; }
+    else if (cgpa >= 3.30) { degClass = 'First Class'; }
+    else if (cgpa >= 2.70) { degClass = 'Second Class'; }
+    else if (cgpa >= 2.00) { degClass = 'Pass'; }
+    else { degClass = 'Fail'; }
+    label = 'CGPA (4.00 Scale)';
+  } else {
+    label = 'CGPA (5.00 Scale)';
+    if (cgpa >= 4.50) degClass = 'First Class with Distinction';
+    else if (cgpa >= 3.75) degClass = 'First Class';
+    else if (cgpa >= 3.00) degClass = 'Second Class';
+    else if (cgpa >= 2.00) degClass = 'Pass';
+    else degClass = 'Fail';
+  }
+
+  document.getElementById('r-cgpa-value').textContent  = cgpa.toFixed(2);
+  document.getElementById('r-cgpa-class').textContent  = cgpa.toFixed(2) + ' / ' + scale + '.00';
+  document.getElementById('r-cgpa-label').textContent  = label;
+  document.getElementById('r-cgpa-credits').textContent = totalCredits;
+  document.getElementById('r-cgpa-points').textContent  = totalPoints.toFixed(2);
+  document.getElementById('r-cgpa-degree').textContent  = degClass;
+  document.getElementById('cgpa-result').classList.add('show');
+}
+
+/* ══════════════
+   TOOL 4: PERCENTAGE
+══════════════ */
+function calcPercentage() {
+  const obtained = parseFloat(document.getElementById('pct-obtained').value) || 0;
+  const total    = parseFloat(document.getElementById('pct-total').value) || 0;
+
+  if (!obtained || !total) { alert('Please enter both marks obtained and total marks.'); return; }
+  if (obtained > total) { alert('Marks obtained cannot exceed total marks.'); return; }
+
+  const pct = (obtained / total) * 100;
+  const missed = total - obtained;
+  let grade = '', bdgrade = '';
+
+  if (pct >= 80) { grade = 'A+'; bdgrade = 'A+ — GPA 5.00'; }
+  else if (pct >= 70) { grade = 'A'; bdgrade = 'A — GPA 4.00'; }
+  else if (pct >= 60) { grade = 'A-'; bdgrade = 'A- — GPA 3.50'; }
+  else if (pct >= 50) { grade = 'B'; bdgrade = 'B — GPA 3.00'; }
+  else if (pct >= 40) { grade = 'C'; bdgrade = 'C — GPA 2.00'; }
+  else if (pct >= 33) { grade = 'D'; bdgrade = 'D — GPA 1.00'; }
+  else { grade = 'F'; bdgrade = 'F — Fail'; }
+
+  document.getElementById('r-pct-value').textContent    = pct.toFixed(2) + '%';
+  document.getElementById('r-pct-grade').textContent    = grade;
+  document.getElementById('r-pct-obtained').textContent = obtained;
+  document.getElementById('r-pct-total').textContent    = total;
+  document.getElementById('r-pct-missed').textContent   = missed + ' marks';
+  document.getElementById('r-pct-bdgrade').textContent  = bdgrade;
+  document.getElementById('pct-result').classList.add('show');
+}
+
+/* ══════════════
+   TOOL 5: GOVT SALARY
+══════════════ */
+// Bangladesh National Pay Scale 2015 — Basic salaries per grade
+const GOVT_SCALE = {
+  1:78000, 2:66000, 3:56500, 4:50000, 5:43000,
+  6:35500, 7:29000, 8:23000, 9:22000, 10:16000,
+  11:12500, 12:11000, 13:10200, 14:9300, 15:8800,
+  16:8500, 17:8350, 18:8300, 19:8275, 20:8250
+};
+const GOVT_INCREMENT = {
+  1:3900,2:3300,3:2825,4:2500,5:2150,
+  6:1775,7:1450,8:1150,9:1100,10:800,
+  11:625,12:550,13:510,14:465,15:440,
+  16:425,17:418,18:415,19:414,20:413
+};
+
+function showGovtSalary() {
+  const grade = parseInt(document.getElementById('govt-grade').value);
+  const years = parseInt(document.getElementById('govt-years').value) || 0;
+  if (!grade) return;
+
+  const basicBase = GOVT_SCALE[grade];
+  const increment = GOVT_INCREMENT[grade];
+  const basic = basicBase + (increment * years);
+  const hra = Math.round(basic * 0.45);
+  const medical = grade <= 5 ? 1500 : grade <= 10 ? 700 : 300;
+  const tiffin = grade <= 10 ? 400 : 250;
+  const gross = basic + hra + medical + tiffin;
+  const annualBonus = basic * 2;
+
+  document.getElementById('r-govt-grade').textContent     = 'Grade ' + grade;
+  document.getElementById('r-govt-basic').textContent     = fmt(basic);
+  document.getElementById('r-govt-hra').textContent       = fmt(hra);
+  document.getElementById('r-govt-medical').textContent   = fmt(medical);
+  document.getElementById('r-govt-tiffin').textContent    = fmt(tiffin);
+  document.getElementById('r-govt-increment').textContent = fmt(increment) + '/year';
+  document.getElementById('r-govt-gross').textContent     = fmt(gross);
+  document.getElementById('r-govt-bonus').textContent     = fmt(annualBonus);
+  document.getElementById('govtsal-result').classList.add('show');
+}
+
+/* ══════════════
+   TOOL 6: SCHOLARSHIP
+══════════════ */
+function checkScholarship() {
+  const level   = document.getElementById('sch-level').value;
+  const gpa     = parseFloat(document.getElementById('sch-gpa').value) || 0;
+  const income  = parseFloat(document.getElementById('sch-income').value) || 0;
+  const area    = document.getElementById('sch-division').value;
+
+  if (!gpa) { alert('Please enter your GPA.'); return; }
+
+  const scholarships = [];
+
+  if (level === 'ssc') {
+    if (gpa >= 5.00) scholarships.push({ name: 'SSC Talent Pool Scholarship', amount: 'Varies by board', eligible: true });
+    if (gpa >= 4.00 && income < 50000) scholarships.push({ name: 'General Scholarship (Board)', amount: '৳ 300–500/month', eligible: true });
+    if (area === 'rural') scholarships.push({ name: 'Rural Student Stipend', amount: '৳ 500/month', eligible: gpa >= 3.50 });
+  }
+  if (level === 'hsc') {
+    if (gpa >= 5.00) scholarships.push({ name: 'HSC Talent Pool Scholarship', amount: '৳ 500/month', eligible: true });
+    if (gpa >= 4.00 && income < 60000) scholarships.push({ name: 'General Scholarship (Board)', amount: '৳ 400/month', eligible: true });
+    if (income < 30000) scholarships.push({ name: 'PM Education Assistance', amount: 'Varies', eligible: gpa >= 3.50 });
+  }
+  if (level === 'university') {
+    if (gpa >= 3.50) scholarships.push({ name: 'PM Fellowship', amount: 'Full tuition + stipend', eligible: true });
+    if (gpa >= 3.00 && income < 50000) scholarships.push({ name: 'University Merit Scholarship', amount: 'Varies by institution', eligible: true });
+    if (income < 25000) scholarships.push({ name: 'Need-based Financial Aid', amount: 'Partial fee waiver', eligible: true });
+  }
+
+  if (scholarships.length === 0) scholarships.push({ name: 'No automatic eligibility found — improve GPA or check with your institution directly', amount: '', eligible: false });
+
+  let html = '';
+  scholarships.forEach(s => {
+    html += `<div class="result-row">
+      <span class="result-label">${s.eligible ? '✅' : 'ℹ️'} ${s.name}</span>
+      <span class="result-value ${s.eligible ? 'green' : ''}">${s.amount}</span>
+    </div>`;
+  });
+
+  document.getElementById('sch-list').innerHTML = html;
+  document.getElementById('sch-result').classList.add('show');
+}
+
+/* ══════════════
+   TOOL 7: STUDY PLANNER
+══════════════ */
+function calcStudyPlan() {
+  const examDate = document.getElementById('study-exam-date').value;
+  const subjects = parseInt(document.getElementById('study-subjects').value) || 0;
+  const hoursDay = parseFloat(document.getElementById('study-hours').value) || 0;
+
+  if (!examDate || !subjects || !hoursDay) { alert('Please fill all fields.'); return; }
+
+  const today = new Date();
+  const exam  = new Date(examDate);
+  const days  = Math.ceil((exam - today) / (1000 * 60 * 60 * 24));
+
+  if (days <= 0) { alert('Exam date must be in the future.'); return; }
+
+  const totalHours    = days * hoursDay;
+  const revisionDays  = Math.max(3, Math.floor(days * 0.15));
+  const studyDays     = days - revisionDays;
+  const hoursPerSub   = (studyDays * hoursDay) / subjects;
+  const daily         = subjects <= 6 ? Math.ceil(24 / subjects) + 'h per subject every ' + Math.ceil(24/subjects) + ' days' : '2–3 subjects per day rotation';
+
+  document.getElementById('r-study-days').textContent        = days + ' days';
+  document.getElementById('r-study-total').textContent       = Math.round(totalHours) + ' hours';
+  document.getElementById('r-study-per-subject').textContent = hoursPerSub.toFixed(1) + ' hours per subject';
+  document.getElementById('r-study-revision').textContent    = revisionDays + ' days (last ' + revisionDays + ' days)';
+  document.getElementById('r-study-daily').textContent       = hoursDay + ' hours/day — ' + daily;
+  document.getElementById('study-result').classList.add('show');
+}
+
+/* ══════════════
+   TOOL 8: GRADE CONVERTER
+══════════════ */
+function calcGradeConv() {
+  const val  = parseFloat(document.getElementById('gconv-value').value) || 0;
+  const from = document.getElementById('gconv-from').value;
+  if (!val) { alert('Please enter a grade value.'); return; }
+
+  let pct = 0;
+  if (from === 'bd5') pct = (val / 5) * 100;
+  else if (from === 'us4') pct = (val / 4) * 100;
+  else pct = val;
+
+  const bd5  = Math.min(5.00, (pct / 100) * 5).toFixed(2);
+  const us4  = Math.min(4.00, (pct / 100) * 4).toFixed(2);
+  const pctv = pct.toFixed(1) + '%';
+  let uk = '', letter = '';
+
+  if (pct >= 70) { uk = 'First Class (1st)'; letter = 'A'; }
+  else if (pct >= 60) { uk = 'Upper Second (2:1)'; letter = 'B+'; }
+  else if (pct >= 50) { uk = 'Lower Second (2:2)'; letter = 'B'; }
+  else if (pct >= 40) { uk = 'Third Class (3rd)'; letter = 'C'; }
+  else { uk = 'Fail'; letter = 'F'; }
+
+  document.getElementById('r-gc-bd5').textContent    = bd5 + ' / 5.00';
+  document.getElementById('r-gc-us4').textContent    = us4 + ' / 4.00';
+  document.getElementById('r-gc-pct').textContent    = pctv;
+  document.getElementById('r-gc-uk').textContent     = uk;
+  document.getElementById('r-gc-letter').textContent = letter;
+  document.getElementById('gconv-result').classList.add('show');
+}
+
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded', function() {
+  renderCGPACourses();
+  const today = new Date();
+  const minDate = new Date();
+  minDate.setDate(today.getDate() + 1);
+  document.getElementById('study-exam-date').min = minDate.toISOString().split('T')[0];
+});
+</script>
+
+<!-- AD STACK REPLACEMENT GUIDE (for VA/Developer)
+══════════════════════════════════════════════════
+Search and replace these placeholders:
+{MONETAG_PUBLISHER_ID}    → in <head> MultiTag script
+{ADSTERRA_ZONE_ID}        → in Popunder script before </body>
+{CLICKADU_ZONE_ID}        → in leaderboard 728x90 div
+{PROPELLERADS_ZONE_ID}    → in interstitial script
+{PROPELLERADS_PUSH_ID}    → in push sub script
+YOUR_ADSTERRA_DIRECT_LINK_HERE → in handleDirectLink() function
+YOUR_MOBIDEA_SMARTLINK_HERE    → in handleDirectLink() function
+
+Adsterra Native Banner 300×250:
+Replace placeholder div inside each .ad-native-side
+
+Adsterra Social Bar:
+Replace placeholder div inside each .ad-social-bar
+══════════════════════════════════════════════════ -->
+
+</body>
+</html>
